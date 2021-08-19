@@ -17,7 +17,8 @@ const Post = props => {
 
       {/* Car Doors & Seats */}
       <Text style={styles.seats}>
-        {post.door} Door - {post.seat} Seats
+        {post.door} Door - {post.seat} Seats, Max of {post.maxPassengers}{' '}
+        passengers
       </Text>
 
       {/* Type & Description */}
@@ -34,7 +35,7 @@ const Post = props => {
       </Text>
 
       {/* Total Price */}
-      <Text style={styles.totalPrice}>${post.totalPrice} Total</Text>
+      {/* <Text style={styles.totalPrice}>${post.totalPrice} Total</Text> */}
     </Pressable>
   );
 };

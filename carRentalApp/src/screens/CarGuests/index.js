@@ -99,7 +99,7 @@ const CarGuestScreen = props => {
         <Pressable
           style={{
             marginBottom: 20,
-            backgroundColor: '#ff1',
+            backgroundColor: '#eb8334',
             alignItems: 'center',
             justifyContent: 'center',
             height: 50,

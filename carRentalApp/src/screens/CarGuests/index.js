@@ -106,7 +106,14 @@ const CarGuestScreen = props => {
             marginHorizontal: 20,
             borderRadius: 10,
           }}
-          onPress={() => navigation.navigate('')}>
+          onPress={() =>
+            navigation.navigate('Home', {
+              screen: 'Explore',
+              params: {
+                screen: 'SearchResults',
+              },
+            })
+          }>
           <Text style={{fontSize: 20, color: 'white', fontWeight: 'bold'}}>
             Search
           </Text>

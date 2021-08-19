@@ -15,6 +15,7 @@ const Router = props => {
         <Stack.Screen
           name={'Home'}
           component={HomeTabNavigator}
+          headerMode="none"
           options={{
             headerShown: false,
           }}

@@ -2,14 +2,23 @@ import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    height: 150,
+    height: 130,
     padding: 5,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 4,
+    },
+    shadowOpacity: 0.3,
+    shadowRadius: 4.65,
+
+    elevation: 8,
   },
   innerContainer: {
     flexDirection: 'row',
     backgroundColor: 'white',
     borderRadius: 10,
-    overflow: 'hidden'
+    overflow: 'hidden',
   },
   image: {
     //width: '100%',
@@ -23,11 +32,11 @@ const styles = StyleSheet.create({
     color: '#5b5b5b',
   },
   description: {
-    fontSize: 18,
-    lineHeight: 25,
+    fontSize: 15,
+    //lineHeight: 25,
   },
   prices: {
-    fontSize: 18,
+    fontSize: 15,
     marginVertical: 10,
   },
   dailyPrice: {

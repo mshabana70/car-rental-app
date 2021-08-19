@@ -21,6 +21,8 @@ import feed from './assets/data/feed';
 
 import Router from './src/navigation/Router';
 
+import {withAuthenticator} from 'aws-amplify-react-native';
+
 const post1 = feed[0];
 const post2 = feed[1];
 
@@ -33,4 +35,4 @@ const App: () => Node = () => {
   );
 };
 
-export default App;
+export default withAuthenticator(App);

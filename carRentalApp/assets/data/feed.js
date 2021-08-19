@@ -6,6 +6,8 @@ export default [
     type: '2020 Chevy Camero ZL1',
     title:
       '650-horsepower supercharged V8 and enough aero enhancements and trick tech features to please an Indy Car engineer.',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     door: 2,
     seat: 4,
     dailyPrice: 115,
@@ -23,6 +25,8 @@ export default [
     type: '2021 Ford F-150 Raptor',
     title:
       'All-new, third-generation Raptor remains a bulkier body double of the regular F-150, which means they share technology and several innovative features.',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     door: 4,
     seat: 5,
     dailyPrice: 130,
@@ -40,6 +44,8 @@ export default [
     type: '2021 Lexus LC 500',
     title:
       '471-HORSEPOWER* 5.0-LITER V8 ENGINE, 10-SPEED DIRECT-SHIFT AUTOMATIC TRANSMISSION, 4.4-SECOND 0–60 TIME',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     door: 2,
     seat: 4,
     dailyPrice: 250,
@@ -57,6 +63,8 @@ export default [
     type: '2021 Lexus LC 500',
     title:
       '471-HORSEPOWER* 5.0-LITER V8 ENGINE, 10-SPEED DIRECT-SHIFT AUTOMATIC TRANSMISSION, 4.4-SECOND 0–60 TIME',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     door: 2,
     seat: 4,
     dailyPrice: 250,

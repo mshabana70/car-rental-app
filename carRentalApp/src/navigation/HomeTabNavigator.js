@@ -3,6 +3,8 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import HomeScreen from '../screens/Home';
 import ExploreNavigator from '../navigation/ExploreNavigator';
 import SearchResultsMap from '../screens/SearchResultsMap';
+import SearchResults from '../screens/SearchResults';
+import PostScreen from '../screens/PostScreen';
 
 import Fontisto from 'react-native-vector-icons/Fontisto';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
@@ -20,8 +22,9 @@ const HomeTabNavigator = props => {
       }}>
       <Tab.Screen
         name={'Explore'}
-        //component={ExploreNavigator}
-        component={SearchResultsMap}
+        component={ExploreNavigator}
+        //component={SearchResultsMap}
+        //component={PostScreen}
         options={{
           tabBarIcon: ({color}) => (
             <Fontisto name="search" size={25} color={color} />
@@ -40,7 +43,7 @@ const HomeTabNavigator = props => {
       />
       <Tab.Screen
         name={'Rental'}
-        component={HomeScreen}
+        component={SearchResults}
         options={{
           tabBarIcon: ({color}) => (
             <MaterialIcons name="car-rental" size={25} color={color} />

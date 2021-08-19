@@ -3,6 +3,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import DestinationSearchScreen from '../screens/DestinationSearch';
 import CarGuestScreen from '../screens/CarGuests';
+import PostScreen from '../screens/PostScreen';
 
 import HomeTabNavigator from './HomeTabNavigator';
 
@@ -32,6 +33,14 @@ const Router = props => {
         <Stack.Screen
           name={'Guest'}
           component={CarGuestScreen}
+          options={{
+            title: 'What Car do you need?',
+          }}
+        />
+
+        <Stack.Screen
+          name={'Post'}
+          component={PostScreen}
           options={{
             title: 'What Car do you need?',
           }}

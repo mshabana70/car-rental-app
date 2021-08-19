@@ -11,6 +11,10 @@ export default [
     dailyPrice: 115,
     monthlyPrice: 2500,
     totalPrice: 47500,
+    coordinate: {
+      latitude: 28.3915637,
+      longitude: -16.6291304,
+    },
   },
   {
     id: '1',
@@ -24,6 +28,10 @@ export default [
     dailyPrice: 130,
     monthlyPrice: 2900,
     totalPrice: 55600,
+    coordinate: {
+      latitude: 28.4815637,
+      longitude: -16.2291304,
+    },
   },
   {
     id: '2',
@@ -37,5 +45,26 @@ export default [
     dailyPrice: 250,
     monthlyPrice: 5000,
     totalPrice: 90000,
+    coordinate: {
+      latitude: 28.2515637,
+      longitude: -16.3991304,
+    },
+  },
+  {
+    id: '3',
+    image:
+      'https://car-rental-app-assets.s3.us-east-2.amazonaws.com/lexusLC500.jpg',
+    type: '2021 Lexus LC 500',
+    title:
+      '471-HORSEPOWER* 5.0-LITER V8 ENGINE, 10-SPEED DIRECT-SHIFT AUTOMATIC TRANSMISSION, 4.4-SECOND 0–60 TIME',
+    door: 2,
+    seat: 4,
+    dailyPrice: 250,
+    monthlyPrice: 5000,
+    totalPrice: 90000,
+    coordinate: {
+      latitude: 28.4815637,
+      longitude: -16.2991304,
+    },
   },
 ];

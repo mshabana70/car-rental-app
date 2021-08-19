@@ -4,35 +4,36 @@ import styles from './styles';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import {useNavigation} from '@react-navigation/native';
 import searchResults from '../../../assets/data/search';
+import {GooglePlacesAutocomplete} from 'react-native-google-places-autocomplete';
+import SuggestionRow from './SuggestionRow';
 
 const DestinationSearchScreen = props => {
-  const initialState = '';
-  const [inputText, setInputText] = useState(initialState);
   const navigation = useNavigation();
 
   return (
     <View style={styles.container}>
       {/* Input Component */}
-      <TextInput
-        style={styles.textInput}
-        placeholder={'Where are you going?'}
-        value={inputText}
-        onChangeText={setInputText}
+      <GooglePlacesAutocomplete
+        placeholder="Where are you going?"
+        onPress={(data, details = null) => {
+          // 'details' is provided when fetchDetails = true
+          console.log(data, details);
+          navigation.navigate('Guest');
+        }}
+        fetchDetails={true}
+        minLength={0}
+        styles={{
+          textInput: styles.textInput,
+        }}
+        query={{
+          key: 'AIzaSyAe4gUrBNU4OLvi_yWwXw5673mEc0m-9dI',
+          language: 'en',
+          types: '(cities)',
+        }}
+        suppressDefaultStyles
+        renderRow={item => <SuggestionRow item={item} />}
       />
       {/* List of destinations */}
-      <FlatList
-        data={searchResults}
-        renderItem={({item}) => (
-          <Pressable
-            onPress={() => navigation.navigate('Car Specs')}
-            style={styles.row}>
-            <View style={styles.iconContainer}>
-              <AntDesign name={'car'} size={30} />
-            </View>
-            <Text style={styles.carText}>{item.description}</Text>
-          </Pressable>
-        )}
-      />
     </View>
   );
 };

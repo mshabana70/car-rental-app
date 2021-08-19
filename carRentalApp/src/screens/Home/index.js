@@ -12,6 +12,7 @@ const HomeScreen = props => {
       {/* Search Bar */}
       <Pressable
         style={styles.searchButton}
+        // google auto complete not working????
         onPress={() => navigation.navigate('Destination Search')}>
         <Fontisto name="search" size={25} color={'#eb8334'} />
         <Text style={styles.searchButtonText}>Where are you going?</Text>
@@ -24,7 +25,7 @@ const HomeScreen = props => {
         {/* Explore Button */}
         <Pressable
           style={styles.button}
-          onPress={() => console.warn('Explore btn clicked')}>
+          onPress={() => navigation.navigate('Guest')}>
           <Text style={styles.buttonText}>Explore our Cars</Text>
         </Pressable>
       </ImageBackground>
